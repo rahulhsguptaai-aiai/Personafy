@@ -1,4 +1,4 @@
-# Personality Type Identifier 🌸
+# Personafy: Know Your Personality 🌸
 
 An outstanding, highly polished, offline-first Progressive Web Application (PWA) designed to identify, break down, and analyze psychological profiles based on the Myers-Briggs personality dimensions. 
 

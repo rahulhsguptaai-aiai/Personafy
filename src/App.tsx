@@ -96,7 +96,7 @@ export default function App() {
               <Fingerprint className="w-4 h-4 stroke-[2]" />
             </div>
             <span className="text-xs sm:text-sm font-semibold tracking-tight text-[#2D332D] font-serif italic">
-              Personality Type Identifier
+              Personafy
             </span>
           </div>
 
@@ -177,13 +177,7 @@ export default function App() {
       </main>
 
       {/* Modern minimal footer */}
-      <footer className="w-full py-5 bg-transparent border-t border-transparent" id="app-site-footer">
-        <div className="max-w-2xl mx-auto px-4 text-center">
-          <p className="text-[10px] text-[#8C8C8C] font-mono tracking-wider">
-            Designed for Instant Load • Zero Server Analytics • PWA Ready
-          </p>
-        </div>
-      </footer>
+  
     </div>
   );
 }

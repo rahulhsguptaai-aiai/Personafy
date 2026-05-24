@@ -76,9 +76,9 @@ export function StartScreen({ onStart }: StartScreenProps) {
         className="text-4xl sm:text-5xl font-serif italic text-[#2D332D] tracking-tight mb-4 leading-[1.15]"
         id="app-title"
       >
-        Personality <br />
-        <span className="text-[#7C8E79] font-normal not-italic">
-          Type Identifier
+        Personafy <br />
+        <span className="text-[#7C8E79] font-normal not-italic text-2xl sm:text-3xl tracking-normal block mt-1">
+          know your personality
         </span>
       </motion.h1>
 
@@ -144,9 +144,6 @@ export function StartScreen({ onStart }: StartScreenProps) {
             →
           </motion.span>
         </motion.button>
-        <p className="text-[10px] text-[#8C8C8C] mt-3 font-mono">
-          Interactive WebApp • Version 1.0.0
-        </p>
       </motion.div>
     </motion.div>
   );
