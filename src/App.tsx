@@ -177,7 +177,34 @@ export default function App() {
       </main>
 
       {/* Modern minimal footer */}
-  
+      <footer className="w-full py-6 mt-auto border-t border-[#EAE7E1]/60 bg-[#FBF9F6]/80 backdrop-blur-md z-15" id="app-site-footer">
+        <div className="max-w-2xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#8C8C8C]">
+          <div className="flex items-center space-x-1">
+            <span>Created by:</span>
+            <span className="font-semibold text-[#2D332D]">Rahul Gupta</span>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1">
+            <span className="hidden md:inline text-[#EAE7E1]">|</span>
+            <a 
+              href="mailto:rahulhsgupta@gmail.com" 
+              className="hover:text-[#7C8E79] transition-colors font-medium hover:underline"
+              id="footer-email-link"
+            >
+              / rahulhsgupta@gmail.com
+            </a>
+            <span className="text-[#EAE7E1]">|</span>
+            <a 
+              href="https://linkedin.com/in/rahul-gupta-44909741" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-[#7C8E79] transition-colors font-medium hover:underline"
+              id="footer-linkedin-link"
+            >
+              / LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
