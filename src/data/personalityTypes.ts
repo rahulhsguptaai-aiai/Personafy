@@ -1,0 +1,217 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { PersonalityTypeDetails } from '../types';
+
+export const PERSONALITY_TYPES: Record<string, PersonalityTypeDetails> = {
+  INTJ: {
+    code: 'INTJ',
+    name: 'The Architect',
+    tagline: 'Strategic, logical, and deeply independent visionaries.',
+    description: 'Architects are highly intellectual, logical, and structured thinkers who love finding patterns, devising long-term strategies, and building systems that turn ideas into reality. You value knowledge, competence, and self-determination, always striving to improve yourself and the systems around you.',
+    strengths: ['Strategic & Analytical', 'Independent & Strong-Willed', 'Highly Innovative', 'Determined & Rational'],
+    weaknesses: ['Can be overly analytical', 'Dismissive of emotional appeal', 'Prone to high perfectionism', 'Skeptical of traditions'],
+    careers: ['Systems Architect', 'Strategic Planner', 'Data Scientist', 'Financial Analyst', 'Software Engineer'],
+    famousPeople: ['Isaac Newton', 'Elon Musk', 'Michelle Obama', 'Friedrich Nietzsche'],
+    gradientClass: 'from-slate-900 via-indigo-950 to-purple-950',
+    bgDecorativeClass: 'bg-indigo-500/10',
+    textColor: 'text-indigo-400'
+  },
+  INTP: {
+    code: 'INTP',
+    name: 'The Logician',
+    tagline: 'Innovative inventors with an unquenchable thirst for knowledge.',
+    description: 'Logicians love analyzing situations, exploring abstract ideas, and breaking things down to understand how they work. You are a natural philosopher, theory-builder, and puzzle solver. You value intellectual authenticity and truth over social pleasantries, preferring deep concept design.',
+    strengths: ['Highly Analytical', 'Open-Minded & Curious', 'Original Thinker', 'Objective & Precise'],
+    weaknesses: ['Can be intellectually detached', 'Prone to analysis paralysis', 'Dislikes repetitive tasks', 'Sometimes overly critical'],
+    careers: ['Theoretical Physicist', 'Systems Operator', 'Research Scientist', 'AI Engineer', 'Philosopher'],
+    famousPeople: ['Albert Einstein', 'Bill Gates', 'Marie Curie', 'Charles Darwin'],
+    gradientClass: 'from-slate-900 via-teal-950 to-emerald-950',
+    bgDecorativeClass: 'bg-teal-500/10',
+    textColor: 'text-teal-400'
+  },
+  ENTJ: {
+    code: 'ENTJ',
+    name: 'The Commander',
+    tagline: 'Decisive, strategic leaders who carve out efficient paths.',
+    description: 'Commanders are natural-born leaders who gather people, formulate big-picture visions, and execute plans with incredible efficiency and resolve. You see inefficiency as a personal challenge to resolve, thriving on goals and structural organization to achieve massive benchmarks.',
+    strengths: ['Efficient & Goal-Driven', 'Extremely Decisive', 'Charismatic & Inspiring', 'Strategic Thinker'],
+    weaknesses: ['Can appear harsh or dominant', 'Inpatient with slow progress', 'Prone to overworking', 'Can overlook emotional nuances'],
+    careers: ['Chief Executive Officer', 'Management Consultant', 'Venture Capitalist', 'Project Director', 'Attorney'],
+    famousPeople: ['Steve Jobs', 'Margaret Thatcher', 'Franklin D. Roosevelt', 'Gordon Ramsay'],
+    gradientClass: 'from-slate-900 via-rose-950 to-red-950',
+    bgDecorativeClass: 'bg-rose-500/10',
+    textColor: 'text-rose-400'
+  },
+  ENTP: {
+    code: 'ENTP',
+    name: 'The Debater',
+    tagline: 'Quick-witted and audaciously creative brainstormers.',
+    description: 'Debaters love play-testing novel ideas, questioning the status quo, and thinking outside the box. You are intellectually agile and relish a friendly sparring session of logic. Rather than traditional routines, you are energized by the raw thrill of early-stage conceptual ideation.',
+    strengths: ['Highly Adaptable & Creative', 'Quick-Thinking & Analytical', 'Excellent Brainstormer', 'Charismatic Speaker'],
+    weaknesses: ['Dislikes practical follow-through', 'Can be argumentative', 'Easily bored by routine', 'Skeptic of structured authority'],
+    careers: ['Product Innovation Lead', 'Public Relations Specialist', 'Entrepreneur', 'Creative Director', 'Political Strategist'],
+    famousPeople: ['Mark Twain', 'Thomas Edison', 'Sarah Silverman', 'Leonardo da Vinci'],
+    gradientClass: 'from-slate-900 via-amber-950 to-orange-950',
+    bgDecorativeClass: 'bg-amber-500/10',
+    textColor: 'text-amber-400'
+  },
+  INFJ: {
+    code: 'INFJ',
+    name: 'The Advocate',
+    tagline: 'Compassionate visionaries guided by a deep moral compass.',
+    description: 'Advocates are quiet, insightful idealists who seek to understand others deeply and find profound, lasting harmony. You possess a unique blend of idealism and execution, rarely settling for superficial answers. You are driven by a constant internal goal to plant seeds of positive progress.',
+    strengths: ['Deeply Compassionate', 'Highly Intuitive', 'Principled & Direct', 'Creative & Strategic'],
+    weaknesses: ['Extremely private', 'Prone to severe burnout', 'Can hold unrealistic standards', 'highly sensitive to conflict'],
+    careers: ['Counselor or Therapist', 'Creative Writer', 'Nonprofit Director', 'Environmental Advocate', 'Art Director'],
+    famousPeople: ['Martin Luther King Jr.', 'Nelson Mandela', 'Eleanor Roosevelt', 'Lady Gaga'],
+    gradientClass: 'from-slate-900 via-violet-950 to-indigo-950',
+    bgDecorativeClass: 'bg-violet-500/10',
+    textColor: 'text-violet-400'
+  },
+  INFP: {
+    code: 'INFP',
+    name: 'The Mediator',
+    tagline: 'Poetic, gentle, and passionately altruistic souls.',
+    description: 'Mediators possess deep inner worlds filled with vivid emotions, high ideals, and creative blueprints. You value personal authenticity, harmony, and individual expression above all. You are endlessly supportive and seek to empower those around you to grow in gentle ways.',
+    strengths: ['Empathetic & Caring', 'Highly Creative', 'Unwaveringly Loyal', 'Open-Minded & Flexible'],
+    weaknesses: ['Can be overly idealistic', 'Sometimes abstracts reality', 'Prone to taking blame', 'Neglects practical structures'],
+    careers: ['Novelist / Poet', 'Graphic Designer', 'Mental Health Advocate', 'Psychologist', 'Fine Artist'],
+    famousPeople: ['William Shakespeare', 'J.R.R. Tolkien', 'Princess Diana', 'Alicia Keys'],
+    gradientClass: 'from-slate-900 via-emerald-950 to-teal-950',
+    bgDecorativeClass: 'bg-emerald-500/10',
+    textColor: 'text-emerald-400'
+  },
+  ENFJ: {
+    code: 'ENFJ',
+    name: 'The Protagonist',
+    tagline: 'Inspiring, empathetic, and highly motivating leaders.',
+    description: 'Protagonists are charismatic and altruistic leaders who radiate warmth, confidence, and positive energy. You naturally see the potential in people and help guide them towards a collective, emotional goal. You feel a deep fulfillment in speaking up for unity and shared values.',
+    strengths: ['Highly Charismatic', 'Empathetic & Inclusive', 'Excellent Organizer', 'Inspiring Communicator'],
+    weaknesses: ['Can be overly protective', 'Prone to personal worry', 'Highly sensitive to critique', 'Sometimes overly compromising'],
+    careers: ['Public Relations Director', 'Teacher / Educator', 'Human Resources Lead', 'Community Organizer', 'Executive Coach'],
+    famousPeople: ['Barack Obama', 'Oprah Winfrey', 'Malala Yousafzai', 'Tony Robbins'],
+    gradientClass: 'from-slate-900 via-fuchsia-950 to-pink-950',
+    bgDecorativeClass: 'bg-fuchsia-500/10',
+    textColor: 'text-fuchsia-400'
+  },
+  ENFP: {
+    code: 'ENFP',
+    name: 'The Campaigner',
+    tagline: 'Vibrant, enthusiastic free spirits who see keys in everything.',
+    description: 'Campaigners are expressive, enthusiastic, and highly sociable explorers who love discovering connections between people, stories, and abstract ideas. Guided by deep emotional authenticity, your magnetic energy inspires hope and sparks dynamic creativity wherever you go.',
+    strengths: ['Extremely Sociable & Warm', 'Highly Creative', 'Enthusiastic & Positive', 'Excellent Communicator'],
+    weaknesses: ['Dislikes detail-oriented work', 'Can be easily distracted', 'Needs constant social feedback', 'Overthinks simple events'],
+    careers: ['Marketing Consultant', 'Creative Writer', 'Event Organizer', 'Brand Strategist', 'Actor / Performer'],
+    famousPeople: ['Robert Downey Jr.', 'Robin Williams', 'Quentin Tarantino', 'Walt Disney'],
+    gradientClass: 'from-slate-900 via-amber-950 to-rose-950',
+    bgDecorativeClass: 'bg-amber-400/10',
+    textColor: 'text-amber-400'
+  },
+  ISTJ: {
+    code: 'ISTJ',
+    name: 'The Logistician',
+    tagline: 'Practical, reliable, and duty-bound systematizers.',
+    description: 'Logisticians are highly reliable, orderly, and factual people who love taking responsibility for their surroundings. You keep things grounded on proven techniques, respecting law, tradition, and established standards of quality to construct dependable framework structures.',
+    strengths: ['Meticulously Responsible', 'Highly Orderly & Calm', 'Practical & Realistic', 'Incredibly Reliable'],
+    weaknesses: ['Can be stubborn', 'Strictly traditional/resistant', 'Prone to blaming yourself', 'Appears reserved or non-emotional'],
+    careers: ['Database Administrator', 'Project Manager', 'Military Officer', 'Accountant', 'Quality Inspector'],
+    famousPeople: ['George Washington', 'Angela Merkel', 'Queen Elizabeth II', 'Warren Buffett'],
+    gradientClass: 'from-slate-900 via-zinc-800 to-slate-950',
+    bgDecorativeClass: 'bg-slate-400/10',
+    textColor: 'text-slate-400'
+  },
+  ISFJ: {
+    code: 'ISFJ',
+    name: 'The Defender',
+    tagline: 'Dedicated, warm, and highly dependable helpers.',
+    description: 'Defenders are quiet, caring, and highly attentive people who work diligently behind the scenes to maintain a safe, welcoming, and tidy community environment. You value loyalty, personal relationships, and security, going above and beyond to protect those carrying precious loads.',
+    strengths: ['Deeply Supportive', 'Meticulous & Practical', 'Reliable & Trustworthy', 'Warm & Attentive'],
+    weaknesses: ['Altruistic to a fault', 'Underplays accomplishments', 'Overloads personal work', 'Easily stressed by changes'],
+    careers: ['Nurse / Healthcare Specialist', 'Social Worker', 'Office Administrator', 'Primary School Teacher', 'Historian'],
+    famousPeople: ['Mother Teresa', 'Beyoncé', 'King George VI', 'Rosa Parks'],
+    gradientClass: 'from-slate-900 via-sky-950 to-indigo-950',
+    bgDecorativeClass: 'bg-sky-500/10',
+    textColor: 'text-sky-400'
+  },
+  ESTJ: {
+    code: 'ESTJ',
+    name: 'The Executive',
+    tagline: 'Excellent administrators who manage people and projects.',
+    description: 'Executives are traditional, detail-oriented, and highly systematizing leaders who love organizing families, groups, or businesses. You lead by honest example, clarifying roles, enforcing fair boundaries, and streamlining tasks on proven principles of efficiency and logic.',
+    strengths: ['Incredibly Organized', 'Direct & Reliable', 'Dedicated & Dedicated', 'Great Administrator'],
+    weaknesses: ['Can appear inflexible', 'Too focused on social order', 'Difficult to express empathy', 'Struggles with abstract settings'],
+    careers: ['Operations Manager', 'Financial Auditor', 'Sales Director', 'Factory Supervisor', 'Police Consultant'],
+    famousPeople: ['John D. Rockefeller', 'Frank Sinatra', 'Sandra Day O\'Connor', 'Alec Baldwin'],
+    gradientClass: 'from-slate-900 via-blue-950 to-slate-950',
+    bgDecorativeClass: 'bg-blue-500/10',
+    textColor: 'text-blue-400'
+  },
+  ESFJ: {
+    code: 'ESFJ',
+    name: 'The Consul',
+    tagline: 'Warm, collaborative, and highly supportive caretakers.',
+    description: 'Consuls are highly social, caring, and cooperative people who naturally understand interpersonal expectations. You are pillars of hospitality, dedicating your energetic focus to organizing social gatherings, keeping tracks of others’ well-being, and preserving harmonious values.',
+    strengths: ['Highly Collaborative & Kind', 'Reliable & Responsible', 'Excellent Mediator', 'Warm Interpersonal Skills'],
+    weaknesses: ['Overly worried about social status', 'Highly sensitive to social rejection', 'Can be resistant to innovations', 'Prone to over-involvement'],
+    careers: ['Human Resource Representative', 'Public Relations Specialist', 'Event Manager', 'Customer Success Director', 'Real Estate Agent'],
+    famousPeople: ['Taylor Swift', 'Bill Clinton', 'Steve Harvey', 'Jennifer Lopez'],
+    gradientClass: 'from-slate-900 via-pink-950 to-rose-950',
+    bgDecorativeClass: 'bg-pink-500/10',
+    textColor: 'text-pink-400'
+  },
+  ISTP: {
+    code: 'ISTP',
+    name: 'The Virtuoso',
+    tagline: 'Bold, practical, and highly analytical creators.',
+    description: 'Virtuosos are quiet, analytical, and highly hands-on troubleshooters who love exploring mechanisms with their hands and eyes. Operating with a style of loose flexibility, you tackle dynamic design challenges with logical ease and a sense of calm, experimental curiosity.',
+    strengths: ['Practical & Highly Resourceful', 'Extremely Adaptable', 'Quietly Analytical', 'Great Under Pressure'],
+    weaknesses: ['Can be emotionally guarded', 'Easily bored by routines', 'Prone to sudden risky action', 'Enforces strict private space'],
+    careers: ['Mechanical Engineer', 'Forensic Scientist', 'Software QA Troubleshooter', 'Pilot', 'Artisanal Architect'],
+    famousPeople: ['Michael Jordan', 'Tom Cruise', 'Indiana Jones (Fictional)', 'Milla Jovovich'],
+    gradientClass: 'from-slate-900 via-zinc-900 to-neutral-950',
+    bgDecorativeClass: 'bg-zinc-500/10',
+    textColor: 'text-zinc-400'
+  },
+  ISFP: {
+    code: 'ISFP',
+    name: 'The Adventurer',
+    tagline: 'Flexible, artistic, and deeply expressive spirits.',
+    description: 'Adventurers are quiet, warm, and highly artistic creators who live in the vibrant present, taking visual or sensory inspiration from their immediate surroundings. You buck conventional structures, preferring to construct beautiful and rich representations of your inner ideals.',
+    strengths: ['Highly Imaginative & Creative', 'Deeply Empathetic', 'Adaptable & Spontaneous', 'Aesthetically Minded'],
+    weaknesses: ['Can be highly sensitive', 'Avoids long-range schedules', 'Prone to emotional fluctuations', 'Prone to high independence'],
+    careers: ['Fashion Designer', 'Landscape Architect', 'Fine Artist', 'Chef', 'Wildlife Photographer'],
+    famousPeople: ['Michael Jackson', 'Frida Kahlo', 'Lana Del Rey', 'Jimi Hendrix'],
+    gradientClass: 'from-slate-900 via-violet-950 to-pink-950',
+    bgDecorativeClass: 'bg-violet-500/10',
+    textColor: 'text-violet-400'
+  },
+  ESTP: {
+    code: 'ESTP',
+    name: 'The Entrepreneur',
+    tagline: 'Vibrant, action-oriented, and highly spontaneous flyers.',
+    description: 'Entrepreneurs are energetic, fast-paced, and highly perceptive doers who live in the moment of active challenge. You excel at real-time problem solving, reading subtle body language patterns, and building direct, tactical solutions for complex problems surrounding you.',
+    strengths: ['Action-Oriented & Perceptive', 'Extremely Resourceful', 'Highly Sociable & Bold', 'Direct Communicator'],
+    weaknesses: ['Can be overly blunt', 'Dislikes abstract theory discussions', 'Prone to taking premature risks', 'Fails to see long-term delays'],
+    careers: ['Sales Negotiator', 'Paramedic / First Responder', 'Crisis Manager', 'Stock Broker', 'Product Promoter'],
+    famousPeople: ['Donald Trump', 'Madonna', 'Bruce Willis', 'Ernest Hemingway'],
+    gradientClass: 'from-slate-900 via-yellow-950 to-orange-950',
+    bgDecorativeClass: 'bg-yellow-500/10',
+    textColor: 'text-yellow-400'
+  },
+  ESFP: {
+    code: 'ESFP',
+    name: 'The Entertainer',
+    tagline: 'Vibrant, spontaneous, and socially magnetic souls.',
+    description: 'Entertainers thrive on the raw joy of the current moment, captivating audiences with contagious laughter, physical warmth, and genuine human engagement. You have a highly sophisticated aesthetic eye and find ways to elevate the styling rhythm of everyday life.',
+    strengths: ['Vibrant & Outgoing', 'Highly Practical & Observant', 'Excellent People Skills', 'Fun-Loving & Spontaneous'],
+    weaknesses: ['Dislikes serious planning', 'Can be easily distracted', 'Highly sensitive to conflict', 'Slightly impulse-driven spender'],
+    careers: ['Event Coordinator', 'Recreational Director', 'Sales Representative', 'Customer Service Specialist', 'Tourism Director'],
+    famousPeople: ['Marilyn Monroe', 'Elvis Presley', 'Winston Churchill', 'Serena Williams'],
+    gradientClass: 'from-slate-900 via-orange-950 to-rose-950',
+    bgDecorativeClass: 'bg-orange-500/10',
+    textColor: 'text-orange-400'
+  }
+};

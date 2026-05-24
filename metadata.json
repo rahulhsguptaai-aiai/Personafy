@@ -1,0 +1,6 @@
+{
+  "name": "Personality Type Identifier",
+  "description": "An elegant, interactive Progressive Web App designed to discover and analyze your personality type through a highly engaging, intuitive 12-question quiz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
